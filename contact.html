@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Krishnakumar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* FIX: Corrected typo "mix-width" → "min-width" */
+      @media (min-width: 1500px) {
+        .sidebar {
+          padding-top: 7%;
+        }
+      }
+
+      p {
+        color: #bbb;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <video autoplay muted loop playsinline>
+      <source src="Assets/m.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      <a href="project.html"><i class="fas fa-project-diagram"></i></a>
+      <a href="achievements.html"><i class="fas fa-trophy"></i></a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h1>Get in Touch</h1>
+      <p>Have a project idea or want to collaborate? Let's connect!</p>
+
+      <!--
+      FIX: Form now has an id and is handled by JS.
+      To make it actually send emails, sign up at emailjs.com (free),
+      replace YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY below.
+    -->
+      <form id="contactForm" novalidate>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Your Message..."
+          required
+        ></textarea>
+        <button type="submit" class="resume" style="margin-left: 23%">
+          Send Message
+        </button>
+        <p class="form-msg" id="formMsg">
+          ✅ Message sent! I'll get back to you soon.
+        </p>
+      </form>
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/krishnakumar-s-627582378/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/krishnakumar0605"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/krish_ram_twinz?igsh=MXR6ZTUwdDZnazVjZw=="
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:krishnakumar@example.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <!--
+    OPTIONAL: Uncomment and fill in your EmailJS credentials to enable real sending.
+    Sign up free at https://www.emailjs.com/
+  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

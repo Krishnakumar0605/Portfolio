@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Krishnakumar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (min-width: 1500px) {
+        .sidebar :first-child {
+          margin-top: 405%;
+        }
+      }
+      @media (max-width: 1024px) {
+        .main {
+          padding: 30px;
+          margin-left: 70px;
+        }
+        .profile-pic {
+          width: 180px;
+          height: 180px;
+        }
+        .name {
+          font-size: 2.2rem;
+        }
+      }
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 50px;
+        }
+        .main {
+          margin-left: 60px;
+          padding: 20px;
+        }
+        .profile-pic {
+          width: 160px;
+          height: 160px;
+        }
+        .name {
+          font-size: 2rem;
+        }
+        .tagline {
+          font-size: 1.1rem;
+        }
+      }
+      @media (max-width: 600px) {
+        body {
+          flex-direction: column;
+        }
+        .sidebar {
+          position: fixed;
+          top: auto;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 60px;
+          flex-direction: row;
+          justify-content: space-around;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 0;
+          padding: 0;
+        }
+        .sidebar :first-child {
+          margin-top: 0;
+        }
+        .sidebar a {
+          margin: 0;
+          padding: 15px 0;
+        }
+        .main {
+          margin-left: 0;
+          margin-bottom: 65px;
+          padding: 30px 20px;
+        }
+        .profile-pic {
+          width: 140px;
+          height: 140px;
+        }
+        .name {
+          font-size: 1.8rem;
+        }
+        .tagline {
+          font-size: 1rem;
+        }
+        .social-icons {
+          gap: 15px;
+        }
+      }
+      @media (max-width: 480px) {
+        .main {
+          padding: 25px 15px;
+        }
+        .profile-pic {
+          width: 120px;
+          height: 120px;
+        }
+        .name {
+          font-size: 1.6rem;
+        }
+        .tagline {
+          font-size: 0.9rem;
+        }
+        .resume {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+      }
+      @media (max-width: 360px) {
+        .main {
+          padding: 20px 10px;
+        }
+        .profile-pic {
+          width: 100px;
+          height: 100px;
+        }
+        .name {
+          font-size: 1.4rem;
+        }
+        .tagline {
+          font-size: 0.85rem;
+        }
+        .resume {
+          padding: 8px 16px;
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <video autoplay muted loop playsinline>
+      <source src="Assets/m.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <!-- FIX: Corrected broken nesting — all <a> tags are now proper siblings -->
+    <div class="sidebar">
+      <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      <a href="project.html"><i class="fas fa-project-diagram"></i></a>
+      <a href="achievements.html"><i class="fas fa-trophy"></i></a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i></a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <div class="profile-pic">
+        <img src="Assets/img.jpg" alt="Profile Picture of Krishnakumar" />
+      </div>
+      <h1 class="name">Krishnakumar</h1>
+      <!-- Typewriter target -->
+      <p class="tagline" id="typewriter"></p>
+      <a
+        href="Assets/Krish resume.pdf"
+        download="Krishnakumar_Resume.pdf"
+        class="resume"
+        >Download CV ⤓</a
+      >
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/krishnakumar-s-627582378/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/krishnakumar0605"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://x.com/Krish06052008"
+          target="_blank"
+          aria-label="X / Twitter"
+        >
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="mailto:krishnakumar@example.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
