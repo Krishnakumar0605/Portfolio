@@ -1,6 +1,6 @@
 // Sends contact form data to Google Sheets via Apps Script.
 // Paste your Web app URL below (ends with /exec).
-const SHEET_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbwOj8MCLUO_q9YFlfMRbTt4AUqSsuyFSf7NP3-9m4PginwKqll9U-HbaSjCoG9Qo4P9/exec';
+const SHEET_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbwGsyzFk1ibSMKhLtsV8fRsteOTa-3u3Cw7LjwTIR8pnRrveexUhQT1ExaKMJhWwcKn/exec';
 
 (function () {
   const form = document.getElementById('contactForm');
